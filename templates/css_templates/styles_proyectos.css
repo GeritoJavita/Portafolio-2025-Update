@@ -40,8 +40,12 @@ header {
     padding: 80px 0;
 }
 .carousel-inner img {
+    max-height: 550px;
+    max-width: 100%;
     object-fit: cover;
-    height: 500px; /* ajusta la altura del carrusel */
+    margin:  auto;
+    displa: block;
+   
 }
 
 .fade-in {
