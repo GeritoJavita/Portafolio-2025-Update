@@ -1,0 +1,243 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    background: linear-gradient(180deg, #f4f4f4, #e0e0e0);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.navbar, .footer {
+    background-color: rgba(0, 0, 0, 0.9); /* negro con menos transparencia */
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #ddd;
+    padding-left: 20px;
+    
+}
+.navbar-nav .nav-link:hover {
+    color: #777;
+}
+
+h2.fade-in {
+    font-weight: bold;
+    color: #8d8989;
+    padding: 35px;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Garamond", serif;
+}
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7); /* blanco con transparencia */
+}
+
+header {
+    background-color: white; /* Fondo blanco para el encabezado */
+    color: #333; /* Texto oscuro para el encabezado */
+    text-align: center;
+    padding: 80px 0;
+}
+.carousel-inner img {
+    object-fit: cover;
+    height: 500px; /* ajusta la altura del carrusel */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+#crud .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#crud .btn {
+    margin-top: 10px;
+}
+
+#crud .collapse {
+    transition: height 0.3s ease;
+}
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* negro con transparencia */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project-section {
+    padding-top: 80px; /* Ajuste para espacio del navbar */
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.project-info {
+    font-size: 18px;
+    color: #666;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.8;
+}
+/* Asegura que las imágenes dentro de las tarjetas tengan el mismo tamaño */
+.card-img-top {
+    width: 100%;
+    height: 320px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+}
+
+.btn-primary {
+    background-color: rgba(119, 119, 119, 0.9); /* gris medio con transparencia */
+    border-color: rgba(119, 119, 119, 0.9);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: rgba(119, 119, 119, 1); /* gris medio sólido */
+    border-color: rgba(119, 119, 119, 1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links  {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links :hover {
+    color: #ccc; /* gris claro al pasar el cursor */
+}
+
+.card-title {
+    color: #3a3a3a;
+}
+
+.card-text {
+    color: #525252;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 800px; /* altura cerrada */
+}
+
+.card.expanded {
+    transform: scale(1.05);
+    max-height: 800px; /* altura expandida */
+}
+
+.btn-outline-secondary {
+    color: #777;
+    border-color: #777;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.btn-outline-secondary:hover {
+    color: #ffffff;
+    border-color: #6b6b6b;
+}
+@media (max-width: 767.98px){
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #495057;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        text-align: right;
+        padding: 10px 20px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+  
+}
+
+.go-top-container {
+    position: fixed;
+    bottom: 2rem; /* Reducido a 2rem desde 4rem */
+    right: 2rem; /* Reducido a 2rem desde 4rem */
+    width: 4.4rem; /* Reducido a 4.4rem desde 6.6rem */
+    height: 4.4rem; /* Reducido a 4.4rem desde 6.6rem */
+    z-index: -1; /* Ajustado a un valor alto para asegurar visibilidad */
+}
+.go-top-button {
+    width: 100%; /* Ajustado al 100% del contenedor */
+    height: 100%; /* Ajustado al 100% del contenedor */
+    background-color: #424242;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    z-index: -1;
+    position: relative; /* Añadido para el posicionamiento relativo */
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.2rem; /* Reducido el tamaño del icono */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: #fff;
+    transition: .2s;
+   
+}
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 4.4rem; /* Ajustado al tamaño inicial */
+    height: 4.4rem; /* Ajustado al tamaño inicial */
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+    50% {
+        width: 5.6rem; /* Ajustado a un tamaño intermedio */
+        height: 5.6rem; /* Ajustado a un tamaño intermedio */
+    }
+    100% {
+        width: 4.4rem; /* Vuelve al tamaño inicial */
+        height: 4.4rem; /* Vuelve al tamaño inicial */
+    }
+}
