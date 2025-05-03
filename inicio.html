@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="css/styles.css"> 
     <link rel="icon" href="img/icono.png" type="image/x-icon">
    
 </head>
@@ -52,12 +51,20 @@
         </div>
     </header>
 
-    
+    <section id="about" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center fade-in">Acerca de mí</h2>
+            <p class="text-center fade-in">Soy estudiante de Ingeniería en Sistemas con sólidos conocimientos en bases de datos, incluyendo SQL y PostgreSQL, y en modelos relacionales. Tengo experiencia en programación backend con lenguajes como Java y C++, y en el uso de Spring Boot. Actualmente, estoy profundizando en tecnologías de la nube, específicamente AWS y Azure, así como en despliegue de aplicaciones.
+
+                Mis habilidades incluyen el manejo de archivos, la realización de backups, el uso del patrón MVC y JDBC. Poseo conocimientos básicos en frontend, abarcando HTML, CSS, Bootstrap y React.js. Además, tengo experiencia en la integración del ciclo de vida de desarrollo de software (SDLC) y estoy orientado hacia una futura especialización en DevOps.
+                  </p>
+        </div>
+    </section>
 <!--EXPERIENCIA SECCION-->
 <section id="experience" class="py-5 bg-light">
     <div class="container position-relative">
         <img src="img/izquierdo-removebg-preview.png" alt="img-decorativa" class="img-fluid rounded-circle header-img fade-in img-left">
-      <h2 class="text-center fade-in"><i class="fas fa-briefcase"></i> Experiencia</h2>
+        <h2 class="text-center fade-in">Experiencia</h2>
         <div class="experience-item mb-4 fade-in">
             <h3>Desarrollador Web Junior en Innovatech Solutions</h3>
             <p>2022 - 2023</p>
@@ -100,121 +107,130 @@
 
 
     
-<!-- Sección de Habilidades -->
-<section id="skills" class="py-5 bg-dark text-white">
+<!--Cards de habilidades-->
+<section id="skills" class="py-5 bg-dark">
     <div class="container">
-        <h2 class="text-center fade-in mb-4">Habilidades</h2>
+        <h2 class="text-center fade-in">Habilidades</h2>
         <div class="row">
-            <!-- Lista de habilidades -->
-            <div class="col-md-4 mb-4 fade-in" data-skill="HTML5" data-desc="API, gráficos avanzados">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title">HTML5</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#html5-desc" aria-expanded="false" aria-controls="html5-desc">Más información</button>
-                        <div class="collapse mt-3" id="html5-desc">
-                            <div class="card card-body bg-secondary text-white">API, gráficos avanzados</div>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#html5-desc" role="button" aria-expanded="false" aria-controls="html5-desc">Más información</button>
+                        <div class="collapse" id="html5-desc">
+                            <div class="card card-body mt-3">
+                               Api, Graphics, Advanced
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4 mb-4 fade-in" data-skill="CSS3" data-desc="Estilos, Keyframes, diseño responsive">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">CSS3</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#css3-desc" aria-expanded="false" aria-controls="css3-desc">Más información</button>
-                        <div class="collapse mt-3" id="css3-desc">
-                            <div class="card card-body bg-secondary text-white">Estilos, Keyframes, diseño responsive</div>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#css3-desc" role="button" aria-expanded="false" aria-controls="css3-desc">Más información</button>
+                        <div class="collapse" id="css3-desc">
+                            <div class="card card-body mt-3">
+                                Styles, KeyFrames, Responsive
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4 mb-4 fade-in" data-skill="Java" data-desc="POO, MVC, JavaFX, Maven">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Java</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#java-desc" aria-expanded="false" aria-controls="java-desc">Más información</button>
-                        <div class="collapse mt-3" id="java-desc">
-                            <div class="card card-body bg-secondary text-white">POO, MVC, JavaFX, Maven</div>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#java-desc" role="button" aria-expanded="false" aria-controls="java-desc">Más información</button>
+                        <div class="collapse" id="java-desc">
+                            <div class="card card-body mt-3">
+                                MVC, Java Swing FX, Ant, Maven, GUI, POO, etc.. 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4 mb-4 fade-in" data-skill="Spring Boot" data-desc="Seguridad, JDBC, Servicios">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">Spring Boot</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#spring-desc" aria-expanded="false" aria-controls="spring-desc">Más información</button>
-                        <div class="collapse mt-3" id="spring-desc">
-                            <div class="card card-body bg-secondary text-white">Seguridad, JDBC, Servicios</div>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#spring-desc" role="button" aria-expanded="false" aria-controls="spring-desc">Más información</button>
+                        <div class="collapse" id="spring-desc">
+                            <div class="card card-body mt-3">
+                                Spring boot security, Propierties, Servicies, JDBC, pom.xml Maven 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4 mb-4 fade-in" data-skill="C++" data-desc="Estructuras de datos">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">C++</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#cpp-desc" aria-expanded="false" aria-controls="cpp-desc">Más información</button>
-                        <div class="collapse mt-3" id="cpp-desc">
-                            <div class="card card-body bg-secondary text-white">Estructuras de datos</div>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#cpp-desc" role="button" aria-expanded="false" aria-controls="cpp-desc">Más información</button>
+                        <div class="collapse" id="cpp-desc">
+                            <div class="card card-body mt-3">
+                                Estructura de datos 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4 mb-4 fade-in" data-skill="SQL" data-desc="Consultas, DDL, DML, Backups">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
                         <h5 class="card-title">SQL</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#sql-desc" aria-expanded="false" aria-controls="sql-desc">Más información</button>
-                        <div class="collapse mt-3" id="sql-desc">
-                            <div class="card card-body bg-secondary text-white">Consultas, DDL, DML, Backups</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Sección de Stack -->
-        <h2 class="text-center fade-in mt-5">Stack</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4 mb-4 fade-in" data-skill="LAMPP" data-desc="Linux, Apache, MySQL, PHP, Perl">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5 class="card-title">LAMPP</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#lampp-desc" aria-expanded="false" aria-controls="lampp-desc">Más información</button>
-                        <div class="collapse mt-3" id="lampp-desc">
-                            <div class="card card-body bg-secondary text-white">Linux, Apache, MySQL, PHP, Perl, Laravel como framework
-                                para proyectos modulares.
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#sql-desc" role="button" aria-expanded="false" aria-controls="sql-desc">Más información</button>
+                        <div class="collapse" id="sql-desc">
+                            <div class="card card-body mt-3">
+                                Conocemientos de Query, DDL, DML, Backups, etc.. 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4 fade-in" data-skill="MERN" data-desc="Mysql, Express.js, React.js, Node.js">
+            <div class="col-md-4 mb-4 fade-in">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">MERN</h5>
-                        <button class="btn btn-outline-light" data-bs-toggle="collapse" href="#mern-desc" aria-expanded="false" aria-controls="lampp-desc">Más información</button>
-                        <div class="collapse mt-3" id="mern-desc">
-                            <div class="card card-body bg-secondary text-white">Proximamente... 
+                        <h5 class="card-title">Python</h5>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#python-desc" role="button" aria-expanded="false" aria-controls="python-desc">Más información</button>
+                        <div class="collapse" id="python-desc">
+                            <div class="card card-body mt-3">
+                                Basically 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">JS</h5>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#js-desc" role="button" aria-expanded="false" aria-controls="js-desc">Más información</button>
+                        <div class="collapse" id="js-desc">
+                            <div class="card card-body mt-3">
+                               Scripts, Json
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Scripting</h5>
+                        <button class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#shell-desc" role="button" aria-expanded="false" aria-controls="shell-desc">Más información</button>
+                        <div class="collapse" id="shell-desc">
+                            <div class="card card-body mt-3">
+                                PowerShell, Bash Shell command Linux
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-          
-        
     </div>
-</section>
-    
-    
 </section>
 
 
@@ -230,7 +246,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" >
-                        <a href="templates/proyecto1.html">
+                        <a href="templates/proyecto.html">
                         <img src="img/inicioindex.png"  alt="Proyecto 1">
                     </a>
                         <div class="carousel-caption">
@@ -238,13 +254,13 @@
                             <p>Alquiler de Casas y Cabañas Vacacionales!</p>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <a href="templates/proyecto2.html">
-                        <img src="img/SistemaAdmin.png" class="" alt="Proyecto 2">
+                    <div class="carousel-item active">
+                        <a href="templates/proyecto1.html">
+                        <img src="img/inicioindex.png" class="" alt="Proyecto 2">
                     </a>
                         <div class="carousel-caption">
-                            <h5>AppetUD</h5>
-                            <p>App de gestion para centros veterianarios!</p>
+                            <h5>Nombre del Proyecto 2</h5>
+                            <p>Descripción breve del proyecto 2.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -279,7 +295,7 @@
             </div>
            
         </div>
-        <p class="Version">Version beta  5.03.2025</p>
+        <p class="Version">Version beta 25.06.2024</p>
         
     </footer>   
     <div class="go-top-container">
