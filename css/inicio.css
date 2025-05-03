@@ -122,4 +122,37 @@ body {
           transform: translateY(0);
         }
       }
+      @media (max-width: 600px) {
+        body {
+          flex-direction: column;
+          height: auto;
+          padding-bottom: 40px;
+        }
       
+        .main-header img {
+          width: 150px;
+          height: 150px;
+        }
+      
+        .main-header h1 {
+          font-size: 2rem;
+        }
+      
+        .tags {
+          font-size: 16px;
+          padding: 0 15px;
+        }
+      
+        .section-links h2 {
+          font-size: 1.5rem;
+        }
+      
+        .btn-section {
+          font-size: 0.9rem;
+          padding: 8px 20px;
+        }
+      
+        .social-icons a {
+          font-size: 1.2rem;
+        }
+      }
