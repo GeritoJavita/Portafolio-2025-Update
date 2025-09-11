@@ -6,55 +6,118 @@
   <title>Proyectos - Gero</title>
 
   <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;500&display=swap" rel="stylesheet" />
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/proyectos.css" />
-  <!-- Favicon -->
-  <link rel="icon" href="img/portafolio-removebg-preview.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/proyectos.css"> 
 </head>
 <div id="particles-js" style="position: fixed; top: 0; left: 0; z-index: -1; width: 100%; height: 100%;"></div>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 <script  class="particles-js" src="js/particles.Js"></script>
 <body>
+  <div id="particles-js"></div>
+  
+  <a href="index.html" class="btn-back">
+    <i class="fas fa-arrow-left"></i>
+  </a>
 
-  <!-- Fondo animado -->
-  <canvas id="background"></canvas>
-
-  <section id="proyectos" class="project-section">
+  <section class="project-section">
     <h2>MIS PROYECTOS</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="img/hotel.png" alt="Proyecto 1">
-        <h3>Sistema Hoteleria</h3>
-        <p>Alquiler de Casas y Cabañas Vacacionales!.</p>
-        <a href="templates/proyecto1.html">Ver más</a>
+    
+    <div class="section-nav">
+      <button class="section-btn active" data-section="sistemas">Sistemas</button>
+      <button class="section-btn" data-section="web">Páginas Web</button>
+    </div>
+    
+    <!-- SECCIÓN DE SISTEMAS -->
+    <div id="sistemas-section" class="content-section active">
+      <div class="project-grid">
+        <!-- Sistema Hoteleria -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/hotel.png" alt="Sistema de Hoteleria">
+          </div>
+          <h3>Sistema Hoteleria</h3>
+          <p>Alquiler de Casas y Cabañas Vacacionales!.</p>
+          <div class="card-footer">
+            <a href="templates/proyecto1.html">Ver más</a>
+            <span class="badge">Sistema</span>
+          </div>
+        </div>
+        
+        <!-- Aplicacion Veterinaria -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/paw.png" alt="Aplicacion Veterinaria">
+          </div>
+          <h3>Aplicacion Veterinaria</h3>
+          <p>Gestion y administracion.</p>
+          <div class="card-footer">
+            <a href="templates/proyecto2.html">Ver más</a>
+            <span class="badge">Sistema</span>
+          </div>
+        </div>
+        
+        <!-- Ecommerce -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/arm.png" alt="Ecommerce">
+          </div>
+          <h3>Ecommerce</h3>
+          <p>Venta de suplementos para el Gym.</p>
+          <div class="card-footer">
+            <a href="#">Ver más</a>
+            <span class="badge">Sistema</span>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="img/paw.png" alt="Proyecto 2">
-        <h3>Aplicacion Veterinaria</h3>
-        <p>Gestion y administracion.</p>
-        <a href="templates/proyecto2.html">Ver más</a>
-      </div>
-      <div class="project-card">
-        <img src="img/arm.png" alt="Proyecto 3">
-        <h3>Ecommerce</h3>
-        <p>Venta de suplementos para el Gym.</p>
-        <a href="#">Ver más</a>
+    </div>
+    
+    <!-- SECCIÓN DE PÁGINAS WEB -->
+    <div id="web-section" class="content-section">
+      <div class="project-grid">
+        <!-- Página Web 1 -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/InstaxDary.png" alt="Productos Web">
+          </div>
+          <h3>Comercio Online</h3>
+          <p>Venta de Productos y Exibicion.</p>
+          <div class="card-footer">
+            <a href="https://instaxdary.com/index/index.html" target="_blank">Visitar sitio</a>
+            <span class="badge">Web</span>
+          </div>
+        </div>
+        
+        <!-- Página Web 2 -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/jaiderart.png" alt="Portafolio Web">
+          </div>
+          <h3>Artista Urbano</h3>
+          <p>Portafolio Web.</p>
+          <div class="card-footer">
+            <a href="https://jaider-artist.onrender.com/" target="_blank">Visitar sitio</a>
+            <span class="badge">Web</span>
+          </div>
+        </div>
+        
+        <!-- Página Web 3 -->
+        <div class="project-card">
+          <div class="image-container">
+            <img src="img/corcasur.png" alt="Landing Page">
+          </div>
+          <h3>Landing Page Producto</h3>
+          <p>Consorcio web.</p>
+          <div class="card-footer">
+            <a href="https://corcasur-landingpage.onrender.com/" target="_blank">Visitar sitio</a>
+            <span class="badge">Web</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-
- 
-
+  <script src="js/section.js"></script>
 </body>
-<a href="index.html" class="btn btn-outline-light position-fixed top-0 start-0 m-3 rounded-circle shadow" style="z-index: 1000;">
-  <i class="fas fa-arrow-left"></i>
-</a>
-
 </html>
